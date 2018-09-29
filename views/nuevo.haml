@@ -1,0 +1,19 @@
+.formulario
+	%a{:href => '/', :class => 'regresar'} Regresar al inicio
+	%form{:method => 'post', :enctype => 'multipart/form-data'}
+
+		.grupo
+			%label{:for => 'file', :class => 'lbl'} Imagen del producto
+			%input{:type => 'file', :name => 'file', :id => 'file', :class => 'tbox'}
+		.grupo
+			%label{:for => 'product', :class => 'lbl'} Nombre del producto
+			%input{:type => 'text', :name => 'product', :id => 'product', :class => 'tbox'}
+		.grupo
+			%label{:for => 'amount', :class => 'lbl'} Cantidad
+			%input{:type => 'text', :name => 'amount', :id => 'amount', :class => 'tbox'}
+		.grupo
+			%label{:for => 'price', :class => 'lbl'} Precio
+			%input{:type => 'text', :name => 'price', :id => 'price', :class => 'tbox'}
+		.grupo
+			.lbl
+			%input{:type => 'submit', :value => 'Agregar', :class => 'btn'}

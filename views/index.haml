@@ -1,0 +1,11 @@
+.opciones
+	%a{:href => '/nuevo', :class => 'btn'} Nuevo producto
+.productos
+	- @productos.each do |producto|
+		.producto
+			%a{:href => "img/#{producto[:imagen]}", :target => '_blank'}
+				%img{:src => "img/#{producto[:imagen]}", :class => 'image', :width => '200', :height => '200'}
+			.content
+				%p{:class => 'nombre'}= producto[:nombre].upcase
+				%p{:class => 'cantidad'}= producto[:cantidad]
+				%p{:class => 'precio'}= producto[:precio]

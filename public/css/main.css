@@ -1,0 +1,133 @@
+*
+{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body
+{
+	background: #f8f8f8;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+.header
+{
+	padding: 15px 30px;
+}
+.container, .footer
+{
+	border-top: 1px solid #999;
+	padding: 15px 30px
+}
+.container
+{
+	flex: 1;
+}
+.productos
+{
+	display: flex;
+	flex-wrap: wrap;
+}
+.producto
+{
+	transition: .5s;
+	background: #fff;
+	margin: 1em;
+	display: flex;
+	padding: 10px;
+	border-radius: 3px;
+	box-shadow: 0px 1px 5px #999;
+}
+.producto:hover
+{
+	box-shadow: 0px 2px 15px #666;
+}
+.image
+{
+	border: 1px solid #999;
+	padding: 4px;
+	object-fit: cover;
+}
+.content
+{
+	margin: 1em;
+}
+.nombre
+{
+	font-size: 18pt;
+	font-weight: bold;
+}
+.cantidad
+{
+	font-style: italic;
+}
+.precio
+{
+	color: #666;
+	font-size: 15pt;
+}
+p
+{
+	margin-bottom: 10px;
+}
+
+.opciones
+{
+	margin: 1em;
+}
+.btn
+{
+	font-size: 11pt;
+	text-decoration: none;
+	color: #fff;
+	font-weight: bold;
+	background: #006699;
+    background: -webkit-linear-gradient(#288ec1, #006699 );
+    background: -o-linear-gradient(#288ec1, #006699 );
+    background: -moz-linear-gradient(#288ec1, #006699 );
+    background: linear-gradient(#288ec1, #006699 );
+    border: 2px solid #006699;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin-right: 1em;
+}
+.btn:hover
+{
+	background: #00295c;
+    background: -webkit-linear-gradient(#085498, #00295c );
+    background: -o-linear-gradient(#085498, #00295c );
+    background: -moz-linear-gradient(#085498, #00295c );
+    background: linear-gradient(#085498, #00295c );
+    border: 2px solid #00295c;
+}
+
+.grupo
+{
+	display: flex;
+	align-items: baseline;
+	margin-bottom: 1em;
+}
+.lbl
+{
+	text-align: right;
+	padding: 0px 1em;
+	width: 180px;
+}
+.tbox
+{
+	width: 280px;
+	padding: 4px 15px;
+}
+.regresar
+{
+	color: blue;
+	text-decoration: none;
+	display: block;
+	margin-top: 1em;
+	margin-bottom: 2em;
+}
+.regresar:hover
+{
+	text-decoration: underline;
+}
